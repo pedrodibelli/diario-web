@@ -135,13 +135,15 @@
   /* INSTALL */
   .install-card{max-width:600px;margin:0 auto;background:var(--surface);border:1px solid var(--line);border-radius:var(--r-xl);padding:50px 44px;text-align:center;transition:transform .25s,border-color .25s,box-shadow .25s;}
   .install-card:hover{transform:translateY(-5px);border-color:rgba(138,180,212,.45);box-shadow:0 18px 50px -20px rgba(138,180,212,.4);}
-  .install-emoji{font-size:40px;margin-bottom:16px;}
+  .install-emoji{margin:0 auto 16px;color:var(--accent);display:flex;justify-content:center;}
+  .install-emoji svg{width:52px;height:52px;display:block;}
   .install-card h2{font-family:var(--font-serif);font-weight:500;font-size:1.9rem;margin-bottom:12px;}
   .install-card > p{font-size:15px;color:var(--muted);line-height:1.75;margin-bottom:30px;}
   .install-os{display:flex;flex-direction:column;gap:11px;text-align:left;margin-bottom:34px;}
-  .install-row{display:flex;align-items:flex-start;gap:14px;background:var(--bg-2);border:1px solid var(--line);border-radius:var(--r-lg);padding:14px 16px;transition:transform .2s,border-color .2s,background .2s,box-shadow .2s;}
+  .install-row{display:flex;align-items:center;gap:14px;background:var(--bg-2);border:1px solid var(--line);border-radius:var(--r-lg);padding:14px 16px;transition:transform .2s,border-color .2s,background .2s,box-shadow .2s;}
   .install-row:hover{transform:translateY(-3px);border-color:rgba(138,180,212,.45);background:var(--surface);box-shadow:0 12px 32px -16px rgba(138,180,212,.4);}
-  .install-row-icon{font-size:20px;flex-shrink:0;margin-top:1px;}
+  .install-row-icon{flex-shrink:0;color:var(--accent);}
+  .install-row-icon svg{width:26px;height:26px;display:block;}
   .install-row p{font-size:13.5px;color:var(--muted);line-height:1.6;}
   .install-row p strong{color:var(--text);font-weight:600;}
 
@@ -300,16 +302,16 @@
 <section class="block">
   <div class="container reveal">
     <div class="install-card">
-      <div class="install-emoji">📲</div>
+      <div class="install-emoji"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10.5 18.5h3"/><path d="M12 6v6"/><path d="M9.6 9.6l2.4 2.4 2.4-2.4"/></svg></div>
       <h2>Instalalo como app</h2>
       <p>Diario es una PWA: se instala en segundos, funciona sin internet y ocupa muy poco. Sin App Store, sin Google Play.</p>
       <div class="install-os">
         <div class="install-row">
-          <div class="install-row-icon">🍎</div>
+          <div class="install-row-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09z"/><path d="M15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.464 2.338-1.282 3.714 1.345.104 2.726-.688 3.57-1.701z"/></svg></div>
           <p><strong>iPhone / iPad:</strong> Safari → botón compartir ⎙ → "Agregar a pantalla de inicio"</p>
         </div>
         <div class="install-row">
-          <div class="install-row-icon">🤖</div>
+          <div class="install-row-icon"><svg viewBox="0 0 24 24" fill="currentColor" style="width:30px;height:30px"><path d="M9 4.4 7.6 2.6" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" fill="none"/><path d="M15 4.4 16.4 2.6" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" fill="none"/><path d="M6.5 9.2A5.5 5.5 0 0 1 17.5 9.2Z"/><circle cx="10" cy="6.9" r=".75" fill="#16181b"/><circle cx="14" cy="6.9" r=".75" fill="#16181b"/><rect x="6.5" y="10" width="11" height="7.6" rx="1.4"/><rect x="3.4" y="10.4" width="2.5" height="6" rx="1.25"/><rect x="18.1" y="10.4" width="2.5" height="6" rx="1.25"/><rect x="8.6" y="16.6" width="2.5" height="4.4" rx="1.25"/><rect x="12.9" y="16.6" width="2.5" height="4.4" rx="1.25"/></svg></div>
           <p><strong>Android:</strong> Chrome → menú ⋮ → "Agregar a pantalla de inicio" o aceptá el banner automático</p>
         </div>
       </div>
